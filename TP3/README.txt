@@ -72,5 +72,6 @@ por cada una de las 100000 iteraciones del for de sumador() y restador(), lo uni
 es enlentecer la ejecución ya que dentro no tienen ninguna instrucción relevante mas que el "pass"
 la cual es una operación nula.
 
-
+2) c) Link imagen: https://github.com/NicoFrie4/ASO2024TPs/blob/master/TP3/Punto_2_inciso_c.png
+	 Link codigo corregido: https://github.com/NicoFrie4/ASO2024TPs/blob/master/TP3/con_race_condition.c
 
