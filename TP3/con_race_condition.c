@@ -22,8 +22,8 @@ void *comer_hamburguesa(void *tid)
 				printf("SE TERMINARON LAS HAMBURGUESAS :( \n");
 
 				pthread_exit(NULL); // forzar terminacion del hilo
-				turno = (turno + 1)% NUMBER_OF_THREADS;
 			}
+			turno = (turno + 1)% NUMBER_OF_THREADS;
 		// SALIDA DE LA ZONA CRÍTICA   
 		}
 	}
