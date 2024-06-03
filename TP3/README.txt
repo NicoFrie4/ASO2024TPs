@@ -68,9 +68,14 @@ Promedio 4.153158 segundos
 
 El tiempo de ejecución de "suma_Resta.py" luego de quitarle los comentarios aumento en gran medida
 ya que se añadieron a la ejecución dos instrucciones for identicas que iteran 1000 veces
-por cada una de las 100000 iteraciones del for de sumador() y restador(), lo unico que logra
-es enlentecer la ejecución ya que dentro no tienen ninguna instrucción relevante mas que el "pass"
-la cual es una operación nula.
+por cada una de las 100000 iteraciones del for de sumador() y restador(), y no hay otra instruccion mas que "pass".
+
+Entrando mas a detalle en el codigo podemos aclarar que la variable global "acumulador" es un recurso
+compartido que los dos hilos compiten para usar, por eso lo llamamos zona critica. Y a la competencia
+entre los hilos por el recurso compartido se la llama "race condition".
+
+Entonces habiendo aclarado lo anterior podemos decir que luego de quitar los comentarios, ademas de enlentecer la ejecucion
+por las iteraciones, se provoca mas facilmente el error de la condicion de carrera o race condition.
 
 2) c) Link imagen: https://github.com/NicoFrie4/ASO2024TPs/blob/master/TP3/Punto_2_inciso_c.png
 	 Link codigo corregido: https://github.com/NicoFrie4/ASO2024TPs/blob/master/TP3/con_race_condition.c
